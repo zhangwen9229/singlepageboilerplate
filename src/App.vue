@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    <router-view class="page"></router-view>
   </div>
 </template>
 
 <script>
+import '@/assets/css/style.css'
+import '@/assets/css/main.css'
 export default {
   name: 'app'
 }
@@ -18,6 +19,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>

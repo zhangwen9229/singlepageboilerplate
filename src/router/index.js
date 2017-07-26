@@ -4,12 +4,14 @@ import Hello from '@/components/Hello'
 
 Vue.use(Router)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Hello',
-      component: Hello
+export default[
+  {
+    path : '/',
+    name : 'home',
+    component : resolve => require(['@/pages/home/index.vue'], resolve),
+    meta : {
+      root: true,
+      showtab: true
     }
-  ]
-})
+  }
+]

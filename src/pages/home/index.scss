@@ -1,0 +1,11 @@
+.content {
+    // position: absolute;
+    height: calc(100% - 106px);
+    overflow-y: auto;
+    
+}
+.test{
+    height: 300px;
+    background: blue;
+    display: flex;
+}
