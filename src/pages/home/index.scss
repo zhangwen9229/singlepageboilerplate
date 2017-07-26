@@ -1,11 +1,22 @@
+
+
 .content {
     // position: absolute;
     height: calc(100% - 106px);
     overflow-y: auto;
-    
 }
-.test{
-    height: 300px;
-    background: blue;
+
+.test {
+    height: 346px;
+    background: url(../../assets/images/topbanner.png) center no-repeat;
+    width: 100%;
     display: flex;
+}
+
+.page {
+    .test1 {
+        height: 200px;
+        border-bottom: 1px solid #e0e;/*no*/
+        
+    }
 }

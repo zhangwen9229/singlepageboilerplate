@@ -58,10 +58,5 @@ module.exports = {
         name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
       }
     }]
-  },
-  plugins: [
-    // new ExtractTextPlugin({
-    // //   filename: path.join(__dirname, '../node_modules', 'hotcss/src/hotcss.js')
-    // })
-  ]
+  }
 }

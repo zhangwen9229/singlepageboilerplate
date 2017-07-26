@@ -1,10 +1,13 @@
 import Vue from 'vue';
 
-import 'normalize.css';
 import 'hotcss';
+
+import 'normalize.css';
 
 import MintUI from 'mint-ui'
 // import 'mint-ui/lib/style.css'
+// import '@/assets/css/style.css'
+
 import App from './App.vue'
 
 Vue.use(MintUI)
