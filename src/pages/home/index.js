@@ -1,7 +1,12 @@
-import { MessageBox } from 'mint-ui';
+import {MessageBox} from 'mint-ui';
+
+import Vue from 'vue';
+import { Cell } from 'mint-ui';
+
+Vue.component(Cell.name, Cell);
 export default {
   data() {
-    return {showsearch: false}
+    return {showsearch: false, pickerValue: null}
   },
   methods : {
     showSearchDialog() {
@@ -16,18 +21,12 @@ export default {
         .$router
         .push({path: '/demo'});
     },
-    btngoods() {},
-    gosearch() {
+    openPicker() {
       this
-        .$router
-        .push({path: '/goods'});
-    },
-    category() {
-      //分类
-      this
-        .$router
-        .push({path: '/category'});
-    },
+        .$refs
+        .picker
+        .open();
+    }
   },
   mounted() {
     MessageBox({title: '提示', message: '确定执行此操作?', showCancelButton: true});
