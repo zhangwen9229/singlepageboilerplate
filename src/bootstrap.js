@@ -4,13 +4,13 @@ import 'hotcss';
 
 import 'normalize.css';
 
-import MintUI from 'mint-ui'
+// import MintUI from 'mint-ui'
 // import 'mint-ui/lib/style.css'
 // import '@/assets/css/style.css'
 
 import App from './App.vue'
 
-Vue.use(MintUI)
+// Vue.use(MintUI)
 // import '@/assets/css/main.css';
 
 import routes from './router'
