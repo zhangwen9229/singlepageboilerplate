@@ -4,6 +4,9 @@ import 'hotcss';
 
 import 'normalize.css';
 
+import '@/assets/css/style.css'
+import '@/assets/css/main.postcss'
+
 // import MintUI from 'mint-ui'
 // import 'mint-ui/lib/style.css'
 // import '@/assets/css/style.css'

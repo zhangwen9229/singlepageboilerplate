@@ -13,7 +13,7 @@ exports.cssLoaders = function (options) {
   options = options || {}
 
   var cssLoader = {
-    loader: 'css-loader',
+    loader: 'css-loader',//?importLoaders=0
     options: {
       minimize: process.env.NODE_ENV === 'production',
       sourceMap: options.sourceMap
@@ -31,7 +31,6 @@ exports.cssLoaders = function (options) {
         })
       })
     }
-
     // Extract CSS when that option is specified
     // (which is the case during production build)
     if (options.extract) {
@@ -62,10 +61,13 @@ exports.styleLoaders = function (options) {
   var loaders = exports.cssLoaders(options)
   for (var extension in loaders) {
     var loader = loaders[extension]
+    // console.log(new RegExp('\\.' + extension + '$'))
     output.push({
       test: new RegExp('\\.' + extension + '$'),
       use: loader
     })
   }
+  // console.log(JSON.stringify(output))
+  // console.log(output[0].test)
   return output
 }

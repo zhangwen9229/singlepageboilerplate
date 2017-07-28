@@ -29,7 +29,7 @@ export default {
     }
   },
   mounted() {
-    MessageBox({title: '提示', message: '确定执行此操作?', showCancelButton: true});
+    // MessageBox({title: '提示', message: '确定执行此操作?', showCancelButton: true});
   },
   components : {
     vFooter: resolve => require(['@/components/common/footer/index.vue'], resolve)
